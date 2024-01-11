@@ -27,10 +27,18 @@ range.addEventListener("change", (e)=>{
             selector.style.width = `${e.target.value}%`
         }, 1000)
 
-        title.textContent = title_list[count - 1]
 
         ani_begin()
     }
+
+    title.textContent = title_list[count - 1]
+
+    const current_active_card = document.querySelector(".active")
+    current_active_card.classList.remove("active")
+
+    const active_card = document.querySelector(`.text_box_${count}`)
+    active_card.classList.add("active")
+
 
     if(rangeValue >= 98 && count == 4){
         count = 1
@@ -39,16 +47,9 @@ range.addEventListener("change", (e)=>{
             selector.style.width = `${e.target.value}%`
         }, 1000)
 
-        title.textContent = title_list[count - 1]
-
         ani_begin()
     }
 
-    const current_active_card = document.querySelector(".active")
-    current_active_card.classList.remove("active")
-
-    const active_card = document.querySelector(`.text_box_${count}`)
-    active_card.classList.add("active")
 })
 
 

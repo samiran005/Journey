@@ -24,8 +24,8 @@ body {
 }
 
 .text_box {
-    width: 250px;
-    height: 400px;
+    width: 260px;
+    height: 420px;
     /* background-color: tomato; */
     border-radius: 30px;
     display: none;
@@ -221,6 +221,9 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
+
+
+    transition: all 0.8s;
     
   }
 
